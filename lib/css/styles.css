@@ -1,0 +1,384 @@
+* {
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%
+}
+body{
+    font-family: Arial, sans-serif;
+}
+strong{
+    font-weight: 600
+}
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.clear{
+    clear: both;
+    padding: 10px 0
+}
+
+header#header{
+    width: 100%;
+    height: 70px;
+    background-color: #FFF;
+}
+
+header#header div#logoBox{
+    float: left;
+    margin-left: 6%;
+    margin-right: 30px
+}
+header#header div#logoBox img{
+    height: 70px;
+}
+
+header#header nav#menuPrincipal{position: relative}
+header#header nav#menuPrincipal ul li{
+    display: inline-block;
+    text-align: left;
+    position: relative;
+}
+
+header#header nav#menuPrincipal ul{
+    z-index: 99999;
+    padding: 12px 0;
+}
+header#header nav#menuPrincipal ul li a{
+    color: #434a54;
+    font-family: Arial, sans-serif;
+    transition: all .25s ease;
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 21px 20px;
+    color: #4d5567;
+    font-weight: 500;
+    line-height: 0.5;
+}
+header#header nav#menuPrincipal i{
+    position: absolute;
+    top: 17px;
+    font-size: 15px;
+    left: 0;
+    color: #b881fc
+}
+header#header nav#menuPrincipal ul#leftMenu li a:hover{
+    color: #b881fc
+}
+header#header nav#menuPrincipal ul#rightMenu li a:hover{
+    color: #3C90BE
+}
+header#header nav#menuPrincipal ul#rightMenu{
+    position: absolute;
+    right: 30px;
+    top: 0
+}
+
+
+div#map, iframe{
+    border: none;
+    width: 100%;
+    margin: 0;
+    margin-top: -4px;
+    height: calc(100vh - 80px);
+}
+main{
+    padding: 40px 0;
+    width: 80%;
+    margin: 0 auto;
+}
+main div.singleContent{
+    padding: 0;
+    margin-bottom: 80px;
+    line-height: 1.6em;
+    width: 100%;
+}
+main div.singleContent h2.titleContent{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.7em;
+    font-variant: small-caps;
+}
+main div.singleContent div.littleContent{
+    width: 40%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+main div.singleContent div.littleContent p{
+    margin-bottom: 15px;
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #768082
+}
+main div.singleContent div.highlightsContent{
+    margin: 20px auto;
+    text-align: center;
+}
+main div.singleContent div.highlightsContent div.itemHighlights{
+    max-width: 300px;
+    display: inline-block;
+    margin: 20px;
+    position: relative;
+}
+div.highlightsContent div.itemHighlights a{
+    height: 100%;
+}
+main div.singleContent div.highlightsContent div.itemHighlights h2{
+    font-size: 1.3em;
+    font-weight: 500;
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+    color: #fff;
+    text-shadow: 0px 0px 2px rgba(100,100,100,.3);
+}
+main div.singleContent h2#hotelsHighlightsTitle{
+    border-bottom: 1px solid #000;
+    padding-bottom: 15px;
+    margin-bottom: 30px
+}
+
+
+main div.singleContent div.highlightsContent div.itemHighlights a img{
+    border-radius: 1px;
+    transition: all 400ms ease;
+    max-width: 100%;
+    box-shadow: 0px 0px 2px rgba(100,100,100,.3);
+    opacity: 0.9
+}
+main div.singleContent div.highlightsContent div.itemHighlights a img:hover{
+    opacity: 1
+}
+main div.singleContent div#hotelsHighlights div.hotelsItems{
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    background-color: #000;
+    position: relative;
+    background-size: cover;
+    background-position: 50% 50%;
+    opacity: .85;
+    height: 300px;
+    width: 250px;
+    position: relative;
+    padding: 10px;
+    float: left
+}
+
+main div.singleContent div#hotelsHighlights div.hotelsItems a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+main div.singleContent div#hotelsHighlights div.hotelsItems:hover a{
+    transition: all 400ms;
+    background-color: rgba(0,0,0,.2);
+}
+main div.singleContent div#hotelsHighlights div.hotelsItems hgroup{
+    position: absolute;
+    bottom: 15px;
+    left: 15px
+}
+main div.singleContent div#hotelsHighlights div.hotelsItems hgroup h3, h5{
+    color: #fff;
+}
+main div.singleContent div#hotelsHighlights div.hotelsItems hgroup h3.hotelsItemsName{
+    font-size: 1.4em;
+    width: 90%;
+}
+main div.singleContent div#hotelsHighlights div.hotelsItems hgroup h5.hotelsItemsCity{
+    letter-spacing: 4px;
+}
+
+main div#infos{
+    clear: both;
+    padding-top: 100px;
+    text-align: center;
+}
+main div#infos div.itemInfos{
+    width: 25%;
+    text-align: center;
+    display: table-cell;
+    margin: 20px;
+
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #768082
+}
+
+
+
+
+footer#footer{
+    color: #72777F;
+    background-color: #282D33;
+    padding: 30px;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+footer#footer a.effect{
+    color: #72777f;
+    transition: color 200ms;
+}
+footer#footer a.effect:hover{
+    color: #fff
+}
+footer div#footerArea{
+    width: 80%;
+    margin: 20px auto;
+}
+footer div#footerArea div.itemFooter{
+    padding: 0 10px;
+    display: table-cell;
+}
+footer div#footerArea div.itemFooter i.fa-envelope{
+    position: absolute;
+    margin-left: -25px;
+}
+footer div#footerArea div.itemFooter h4{
+    font-size: 14px;
+    line-height: 1.6em;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: 700
+}
+
+footer div#footerArea div.itemFooter p{
+    position: relative;
+    padding-left: 30px;
+}
+
+
+footer div#footerArea div.itemFooter div#socialLinks a{
+    background: #323840;
+    border-radius: 100%;
+    transition: all 400ms;
+    color: #fff;
+    display: inline-block;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    line-height: 45px;
+    margin-right: 10px
+}
+footer div#footerArea div.itemFooter div#socialLinks a:hover{
+    background: #3C90BE;
+}
+
+footer div#footerArea div.itemFooter div#socialLinks img:hover{
+    background-color: #3b5998
+}
+footer div#subFooter{
+    color: #72777F;
+    width: 100%;
+    height: 46px;
+    background-color: #313643;
+    font-size: 14px;
+}
+footer div#subFooter div#subFooterContent{
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+footer div#subFooter div#subFooterContent p#legal{
+    font-size: 1.2em;
+    float: left;
+    margin-top: 15px
+}
+footer div#subFooter div#subFooterContent ul{
+    position: absolute;
+    right: 0px;
+    top: 15px
+}
+footer div#subFooter div#subFooterContent ul li{
+    display: inline-block;
+    padding: 0 20px
+}
+footer div#subFooter div#subFooterContent ul li a{
+    color: inherit;
+    font-size: 1.1em
+}
+
+
+
+
+/*
+ * Media Queries
+*/
+@media screen and (max-width: 1000px){
+    header#header{
+        height: auto;
+    }
+    header#header div#logoBox{
+        margin: 0;
+        float: none;
+        text-align: center;
+    }
+
+
+    header#header nav#menuPrincipal{text-align: center;}
+    header#header nav#menuPrincipal ul{padding: 0}
+    header#header nav#menuPrincipal ul#leftMenu, ul#rightMenu{
+        display: inline-block;
+    }
+
+    header#header nav#menuPrincipal ul#rightMenu{
+        position: static;
+    }
+
+
+    main div.singleContent div.littleContent{
+        width: 100%;
+    }
+
+
+    main div#infos div.itemInfos{
+        width: 100%;
+        display: block;
+    }
+
+    footer div#footerArea div.itemFooter{
+        display: block
+    }
+
+    footer div#subFooter{
+        height: auto;
+        padding: 10px 0
+    }
+    footer div#subFooter div#subFooterContent{
+        text-align: center;
+    }
+    footer div#subFooter div#subFooterContent p#legal{
+        float: none;
+        margin: 0;
+        margin-bottom: 5px;
+    }
+    footer div#subFooter div#subFooterContent ul{
+        position: static;
+    }
+
+}

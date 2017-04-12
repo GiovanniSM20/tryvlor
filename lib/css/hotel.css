@@ -1,0 +1,117 @@
+div#slide-container{
+	width: 40%;
+	height: auto;
+	margin: 0;
+	float: left;
+	margin-right: 10px;
+}
+div#slide-container div.swiper-slide{text-align: center;}
+div#slide-container div.swiper-slide img{height: 400px;}
+
+div#hotelBox{
+	float: left;
+	width: calc(60% - 10px);
+}
+h1{
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	font-variant: small-caps;
+	color: #565656
+}
+div#starsMedia{
+	color: #72777F;
+	text-align: center;
+	padding: 10px 0;
+	padding-top: 0
+}
+div#starsMedia i{
+	color: #FC0;
+	font-size: 1.4em;
+	margin: 0 5px;
+}
+
+div#hotelBox article#description{
+	margin: 15px 0;
+	padding: 0 12px
+}
+
+div#cardsAccepted{
+	text-align: center;
+}
+div#cardsAccepted img{
+	height: 40px;	
+}
+
+/* ----------- Comodidades -------------- */
+div#comodities{
+	text-align: center;
+	margin-top: 20px
+}
+div#comodities ul{
+}
+div#comodities ul li{
+	display: inline-block;
+	margin: 10px;
+	position: relative;
+	font-weight: 100;
+	color: #4e4e4e;
+	transition: color 400ms;
+	cursor: pointer;
+}
+div#comodities ul li:hover{
+	color: #008aff;
+}
+div#comodities li i{
+	margin-right: 5px;
+	font-size: 1.1em;
+}
+
+/* ------------------- Bom SABER ------------ */
+div#bomsaber article{
+	width: 80%;
+	margin: 5px auto;
+}
+
+
+/* 
+ * Evaluation Hotel
+*/
+div#evaluation {
+	padding-top: 20px;
+	text-align: center;
+}
+div#evaluation input[type=radio] {
+	display: none; 
+}
+div#evaluation label {
+	font-size: 1.5em; 
+}
+div#evaluation label i.fa:before {
+	content: '\f005';
+	color: #FC0; 
+}
+div#evaluation input[type=radio]:checked ~ label i.fa:before {
+	color: #CCC; 
+}
+
+
+/*
+ * Media Queries
+*/
+@media screen and (max-width: 1000px){
+	div#slide-container{
+		float: none;
+		width: 100%;
+	}
+	div#slide-container div.swiper-slide{text-align: center;}
+	div#slide-container div.swiper-slide img{
+		height: 400px;
+		width: auto;
+	}
+
+	div#hotelBox{
+	    float: none;
+ 	  	width: 100%;
+	}
+}

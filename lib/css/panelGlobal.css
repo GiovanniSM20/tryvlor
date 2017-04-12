@@ -1,0 +1,84 @@
+ body{
+ 	background: #fcfcfc
+ }
+ 
+ img#logo{
+ 	height: 90px;
+ 	display: block; 
+ 	margin: 10px auto
+ }
+
+ header ul a.active{
+ 	border-left: 6px solid #3289e2;
+ }
+ main{
+ 	padding-left: 300px;
+ }
+
+ main div.content{
+ 	width: 80%;
+ 	margin: 1em auto
+ }
+
+ main div.content h1{
+ 	font-size: 2em;
+ 	color: #777;
+ 	text-align: center;
+ 	border-bottom: 2px solid #e8e8e8;
+ 	padding-bottom: 6px;
+ 	width: 80%;
+ 	margin: 1em auto
+ }
+
+ /* Materialize Form Updates */
+ /* label color */
+ .input-field label {
+ 	color: #000;
+ }
+ /* label focus color */
+ .input-field input[type=text]:focus + label {
+ 	color: #3289e2;
+ }
+ /* label underline focus color */
+ .input-field input[type=text]:focus {
+ 	border-bottom: 1px solid #3289e2;
+ 	box-shadow: 0 1px 0 0 #3289e2;
+ }
+ /* valid color */
+ .input-field input[type=text].valid {
+ 	border-bottom: 1px solid #3289e2;
+ 	box-shadow: 0 1px 0 0 #3289e2;
+ }
+ /* invalid color */
+ .input-field input[type=text].invalid {
+ 	border-bottom: 1px solid red;
+ 	box-shadow: 0 1px 0 0 red;
+ }
+ /* icon prefix focus color */
+ .input-field .prefix.active {
+ 	color: #3289e2;
+ }
+ .btn{background-color: #3289e2 }
+ .btn:hover{
+ 	background-color: #3289e2 
+ }
+main form{
+	width: 85%;
+	margin: 1em auto;
+	padding:0;
+}
+main form input[type="submit"]{
+	    display: block;
+    margin: 10px auto;
+    background: #3289e2;
+    color: #fff;
+    border: none;
+    border-bottom: solid 4px #2565a7;
+    padding: 10px 15px;
+    border-radius: 2px;
+    transition: background 400ms
+}
+
+main form input[type="submit"]:hover{
+	background: #2565a7
+}
